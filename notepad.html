@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notepad</title>
+    <link rel="stylesheet" href="notepad.css">
+</head>
+<body>
+
+    <!-- Front Cover -->
+    <div id="front-cover" class="cover">
+        <h1>Write It Down 😊❤️</h1>
+        <button id="startBtn">Start Writing</button>
+    </div>
+
+    <!-- Notebook Section -->
+    <div id="notebook" class="notebook" style="display: none;">
+        <div class="controls">
+            <select id="penColor">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="pink">Pink</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+            <div class="emoji-picker">
+                <button class="emoji-btn">❤️</button> <!-- Red Heart -->
+                <button class="emoji-btn">😊</button> <!-- Happy Face -->
+                <button class="emoji-btn">🌻</button> <!-- Sunflower -->
+                <button class="emoji-btn">🌈</button> <!-- Rainbow -->
+                <button class="emoji-btn">🤎</button> <!-- Brown Heart -->
+                <button class="emoji-btn">🖤</button> <!-- Black Heart -->
+                <button class="emoji-btn">🤍</button> <!-- White Heart -->
+            </div>
+        </div>
+
+        <!-- Notebook Content (Editable Area) -->
+        <div id="notepad" class="editable-notepad" contenteditable="true"></div>
+
+        <!-- Save Button -->
+        <button id="saveButton">Save</button>
+
+        <div class="navigation">
+            <button id="prevPage">Previous</button>
+            <span id="pageNum">Page: 1 of 250</span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+
+    <script src="notepad1.js"></script>
+</body>
+</html>
